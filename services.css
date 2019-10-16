@@ -1,0 +1,60 @@
+
+h4{
+    text-align: center;
+    color: black;
+    font-family: 'Lucida Bright';
+}
+p{
+    color:white;
+    font-family: 'Arial';
+}
+table, th {
+    border: 2px #ffcc32 dotted;
+    margin-left: auto;
+    margin-right: auto;
+}
+form {
+
+    background-color: #f29db9;
+    padding: 20px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+header { font-family: fantasy;
+    font-size: 100px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  nav { font-family: fantasy;
+    font-size: 35px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  a{
+    text-decoration: none;
+    text-align: center;
+    color: #f29db9;
+  }
+  hr{
+    width: 50%;
+    color: black;
+  }
+  a:hover {
+    background-color:#ffcc32;
+   color: white; 
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f29db9;
+    color: white;
+    text-align: center;
+ }
+ a.foot{
+    color:white;
+  }
