@@ -1,93 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The Kay Way.com</title>
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keyword" content="Kay way homepage">
+  <meta name="description" content="makeup website landing page">
+
+  <!-- I used SEO principales on each page as seen above -->
+  <title>The Kay Way.com</title>
+  <link rel="stylesheet" type="text/css" href="homepage.css" />
+  <!-- all the colors and fonts are the same due to the use of these css stylesheets -->
 </head>
-<link rel="stylesheet" type="text/css" href="homepage.css" />
-<body>
-<header>
-The Kay Way 
-
-<nav>
-    <a href="index.htm">Home  &nbsp; |</a> &nbsp;
-    <a href="creativeinspo.htm">Creative Inspo  &nbsp; |</a> &nbsp;
-    <a href="services.htm">Services  &nbsp; |</a> &nbsp;
-    <a href="About me.htm">About Me  &nbsp; |</a> &nbsp;
-    <a href="">Blog</a>
-    <hr>
-</nav>
-</header>  
 
 
-<div class="slideshow-container">
+<body onload="doScroll()">
+  <header>
+    The Kay Way
 
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="homepage1.JPG" alt="image of Kayla squatting" title="image of Kayla squatting" >
-          <div class="text">Serving Looks</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="homepage2.jpg" alt="Kayla's everyday makeup look" title="kayla's everyday glitter" >
-          <div class="text">Glitter</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="homepage3.JPG" alt="girl in the sun" title="Kaylas makeup work">
-          <div class="text">Flawless</div>
-        </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-        <div class="footer">
-            <p>  <a class= "foot" href="services.htm">feedback</a> </p>
-          </div>
-        
-        <script>
-          var slideIndex = 1;
-          showSlides(slideIndex);
-          
-          function plusSlides(n) {
-            showSlides(slideIndex += n);
-          }
-          
-          function currentSlide(n) {
-            showSlides(slideIndex = n);
-          }
-          
-          function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-          }
-          </script>
- <br>
- <br>
- <br>
- <br>
+    <nav>
+      <a href="index.htm">Home &nbsp; |</a> &nbsp;
+      <a href="creativeinspo.htm">Creative Inspo &nbsp; |</a> &nbsp;
+      <a href="services.htm">Services &nbsp; |</a> &nbsp;
+      <a href="About me.htm">About Me &nbsp; |</a> &nbsp;
+      <a href="blog.htm">Blog</a>
+      <hr>
+    </nav>
+
+  </header>
+  <div id="moving">
+    <h3 id="msg">This text will move</h3>
+  </div>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/homepage1.JPG" alt="image of Kayla squatting" title="image of Kayla squatting">
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/homepage2.jpg" alt="Kayla's everyday makeup look" title="kayla's everyday glitter">
+      <!-- <div class="text">Glitter</div> -->
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/homepage3.JPG" alt="girl in the sun" title="Kaylas makeup work">
+      <!-- <div class="text">Flawless</div> -->
+    </div>
+
+    <div id="text">Serving Looks</div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <!-- it can be seen in the "index.js" file that i used and array so that when 
+users click the next button the etxt changes -->
+
+<!-- used slide show here  -->
+  <div class="footer">
+    <p> <a class="foot" href="services.htm">feedback</a> </p>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
 </body>
+
+
+<footer>
+  <script src="index.js"></script>
+</footer>
+
+</html>

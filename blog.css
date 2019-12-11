@@ -1,0 +1,54 @@
+h1 {
+    text-align: center;
+  }
+  h3#msg {
+    position: absolute;
+    color: white;
+    font-family: Arial;
+    width: auto;
+  }
+  div#moving {
+    border: 1px solid  #f29db9;
+    height: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color:  #f29db9;
+  }
+  header { font-family: "Palatino Linotype";
+      font-size: 100px;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    nav { font-family: "Palatino Linotype";
+      font-size: 35px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    a{
+      text-decoration: none;
+      text-align: center;
+      color: #f29db9;
+    }
+    hr{
+      width: 50%;
+      color: black;
+    }
+    a:hover {
+      background-color:#ffcc32;
+     color: white; 
+    }
+    p {
+        text-align: right;
+        margin-right: 25%;
+        font-family: 'Lucida Sans';
+      
+    }
+    #first {
+      font-family: "Palatino Linotype";
+      font-size: 60px;
+
+    }
+ 
+  
+ 

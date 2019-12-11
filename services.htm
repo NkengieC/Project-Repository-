@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keyword" content="Makeup prices and services">
+    <meta name="description" content="Kay Way services and price page">
     <title>Services</title>
-    
+    <script>
+        function change(){
+
+       
+        let myForm = document.getElementById("myForm");
+        if (myForm.lastname.value==""|| myForm.firstname.value== ""){
+            alert("Please enter a first and last name!")
+        };
+
+    }
+    // Validated form here
+    </script>
 </head>
 <link rel="stylesheet" type="text/css" href="services.css" />
-<body>
+
+<body onload="doScroll()">
     <header>
         The Kay Way 
         
@@ -17,10 +31,13 @@
             <a href="creativeinspo.htm">Creative Inspo  &nbsp; |</a> &nbsp;
             <a href="services.htm">Services  &nbsp; |</a> &nbsp;
             <a href="About me.htm">About Me  &nbsp; |</a> &nbsp;
-            <a href="">Blog</a>
+            <a href="blog.htm">Blog</a>
             <hr>
         </nav>
         </header> 
+        <div id="moving">
+                <h3 id="msg">This text will move</h3>
+              </div>
         <h4>Services Provided</h4>
         <table>
             <tr>
@@ -43,7 +60,7 @@
             </tr>
             <tr>
                 <td> Sparkle  Glam</td>
-                <td>$45</td>
+              <td>$45</td>
                 <td> additional $10</td>
                 <td> additional $15</td>
             </tr>
@@ -56,14 +73,13 @@
         </table> 
         <h4> Service Review Form</h4>
         <br>
-        <form method="POST" action="mailto:kaylalee@thekay-way
-        .com">
+        <form  action="" id="myForm"  >
             <p>
                 Last Name:
-                <input type="text" name="last-name" size="25" maxlength="20" placeholder="Please enter your last name" />
+                <input type="text" name="lastname" size="25" maxlength="20" placeholder="Please enter your last name" required />
     
                 First Name:
-                <input type="text" name="first-name" size="25" maxlength="20" placeholder="Please enter your first name" />
+                <input type="text" name="firstname" size="25" maxlength="20" placeholder="Please enter your first name" required/>
             </p>
            
            
@@ -96,10 +112,14 @@
                 <textarea name="comments" rows="5" cols="29">Any comments will help!</textarea>
             </p> 
             <p>
-                <input type="submit" value="Submit" name="Submit" />
+                <input onclick="change()" type="submit" value="Submit" name="Submit" />
             </p>
+        </form>
             <div class="footer">
+                
                     <p>  <a class="foot" href="services.htm">feedback</a> </p>
                   </div>
+
 </body>
+<footer> <script src="services.js" ></script></footer>
 </html>
